@@ -1,0 +1,400 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+/* HEADER */
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+
+#header nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212121;
+    /* opacity: 20%; */
+    /* border: 1px solid black; */
+}
+
+#header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.hero_image{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1553527922-767df645c5f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+.hero_image h1{
+    color: whitesmoke;
+    font-size: 5vw;
+    padding: .4em;
+}
+
+.hero_image h5{
+    font-size: 2vw;
+    padding-left: .6em;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#header ul a{
+    list-style-type: none;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* ABOUT  */
+.about{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 2.5em 0;
+    /* border: 1px solid black; */
+}
+.about_text{
+    width: 30%;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.about_text p {
+    text-align: justify;
+    font-size: 1vw;
+}
+
+.about_image{
+    width: 60%;
+    margin-right: 2em;
+    /* border: 1px solid black; */
+    background-image: url('https://images.pexels.com/photos/3075532/pexels-photo-3075532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-color: white;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+/* SERVICES */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    color: whitesmoke;
+}
+
+.grid_images{
+    display: grid;
+    width: 70%;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin: 2em;
+    grid-template-areas:
+    "one one two"
+    "one one thr"
+    "for fiv six"
+    ;
+
+}
+
+.one{
+    grid-area: one;
+    background-image: url('https://images.pexels.com/photos/2079438/pexels-photo-2079438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.two{
+    grid-area: two;
+    background-image: url('https://images.pexels.com/photos/2672886/pexels-photo-2672886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-color: white;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.thr{
+    grid-area: thr;
+    background-image: url('https://images.pexels.com/photos/3498/italian-pizza-restaurant-italy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-color: white;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.for{
+    grid-area: for;
+    background-image: url('https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fiv{
+    grid-area: fiv;
+    background-image: url('https://images.pexels.com/photos/2090921/pexels-photo-2090921.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-color: white;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.six{
+    grid-area: six;
+    background-image: url('https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PRICING */
+
+.booking{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 2em 0;
+}
+.booking h3 {
+    font-size: 2vw;
+}
+
+.booking h6{
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+}
+
+.booking p{
+    text-align: center;
+}
+
+.booking i{
+    font-size: 5vw;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    padding: 3em;
+}
+
+form input {
+    padding: 1.5em;
+}
+
+form button{
+    margin-top: 2em;
+    width: 30%;
+    background-color: transparent;
+    padding: 1.5em;
+}
+
+label {
+    font: bold;
+}
+
+select {
+    padding: 1em;
+    width: 35%;
+}
+select option{
+    font-weight: bold;
+}
+
+input{
+    width: 30%;
+}
+
+/* FOOTER */
+
+#footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    background-color: #212121;
+    padding: 5em 0;
+}
+
+#footer ul{
+    padding: 0;
+    color: gainsboro;
+    font-weight: normal;
+    list-style-type: none;
+}
+
+#footer ul a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+#footer div{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_one{
+    flex-direction: column;
+}
+
+.footer_three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_three div{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_three ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 900px){
+    #header nav{
+        flex-direction: column;
+    }
+    #header ul {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    .title h1 {
+        font-size: 13vw;
+    }
+    .title h5 {
+        font-size: 4vw;
+    }
+    input {
+        width: 40%;
+    }
+}
+
+@media (max-width: 500px){
+    #header {
+        justify-content: center;
+        align-items: space-between;
+    }
+    .title div h5:nth-child(2nd){
+        font-size: 6vw
+    }
+    #header ul {
+        display: none;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://images.pexels.com/photos/3075532/pexels-photo-3075532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-size: cover;
+        background-color: white;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    .about_text{
+        background-color: whitesmoke;
+        opacity: 90%;
+    }
+    .about_image{
+        display: none;
+    }
+    .grid_images{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "one"
+        "two"
+        "thr"
+        "for"
+        "fiv"
+        "six";
+    }
+    .footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_one{
+        width: 80%;
+    }
+    form {
+        width: 90%;
+        border: none;
+    }
+
+}
