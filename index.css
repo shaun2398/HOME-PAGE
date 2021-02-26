@@ -38,6 +38,7 @@ nav ul{
     width: 40%;
     padding: 0;
     margin: 0;
+    z-index: 4;
     /* border: 1px solid black; */
 }
 
@@ -361,7 +362,7 @@ input{
     .title div h5:nth-child(2nd){
         font-size: 6vw
     }
-    ul {
+    nav ul {
         display: none;
     }
     .about{
