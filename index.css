@@ -20,17 +20,18 @@ body{
     /* border: 1px solid black; */
 }
 
-#header nav{
+nav{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-around;
     background-color: #212121;
+    position: fixed;
     /* opacity: 20%; */
     /* border: 1px solid black; */
 }
 
-#header ul{
+nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,7 +82,7 @@ a{
     margin: 0;
 }
 
-#header ul a{
+ul a{
     list-style-type: none;
     text-decoration: none;
     color: whitesmoke;
@@ -287,6 +288,7 @@ input{
     color: gainsboro;
     font-weight: normal;
     list-style-type: none;
+    display: flex;
 }
 
 #footer ul a {
@@ -302,6 +304,13 @@ input{
 
 .footer_one{
     flex-direction: column;
+}
+
+.footer_one ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .footer_three{
@@ -326,10 +335,10 @@ input{
 }
 
 @media (max-width: 900px){
-    #header nav{
+    nav{
         flex-direction: column;
     }
-    #header ul {
+    ul {
         width: 100%;
         margin-bottom: 1.5em;
     }
@@ -352,7 +361,7 @@ input{
     .title div h5:nth-child(2nd){
         font-size: 6vw
     }
-    #header ul {
+    ul {
         display: none;
     }
     .about{
@@ -391,6 +400,9 @@ input{
     }
     .footer_one{
         width: 80%;
+    }
+    .footer_one ul {
+        display: flex;
     }
     form {
         width: 90%;
