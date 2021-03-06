@@ -347,28 +347,6 @@ nav i{
     box-shadow: none;
 }
 
-/* @media (max-width: 800px){
-    nav{
-        flex-direction: column;
-    }
-    ul {
-        width: 100%;
-        margin-bottom: 3em;
-    }
-    nav ul li {
-        margin-bottom: 3em;
-    }
-    .title h1 {
-        font-size: 13vw;
-    }
-    .title h5 {
-        font-size: 4vw;
-    }
-    input {
-        width: 40%;
-    }
-} */
-
 @media (max-width: 800px){
     nav{
         flex-direction: row;
