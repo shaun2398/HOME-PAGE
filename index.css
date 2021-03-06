@@ -27,6 +27,7 @@ nav{
     justify-content: space-around;
     background-color: #212121;
     position: fixed;
+    z-index: 8;
     /* opacity: 20%; */
     /* border: 1px solid black; */
 }
@@ -38,13 +39,16 @@ nav ul{
     width: 40%;
     padding: 0;
     margin: 0;
-    z-index: 4;
     /* border: 1px solid black; */
 }
 
 a{
     text-decoration: none;
     color: whitesmoke;
+}
+
+nav button{
+    display: none;
 }
 
 .hero_image{
@@ -335,13 +339,23 @@ input{
     margin: 0;
 }
 
-@media (max-width: 900px){
+nav i{
+    color: white;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* @media (max-width: 800px){
     nav{
         flex-direction: column;
     }
     ul {
         width: 100%;
-        margin-bottom: 1.5em;
+        margin-bottom: 3em;
+    }
+    nav ul li {
+        margin-bottom: 3em;
     }
     .title h1 {
         font-size: 13vw;
@@ -352,9 +366,22 @@ input{
     input {
         width: 40%;
     }
-}
+} */
 
-@media (max-width: 500px){
+@media (max-width: 800px){
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav h2 {
+        margin-left: 1em;
+    }
+    nav button{
+        display: flex;
+        margin-right: 1em;
+        background-color: transparent;
+    }
     #header {
         justify-content: center;
         align-items: space-between;
@@ -365,6 +392,19 @@ input{
     nav ul {
         display: none;
     }
+
+    .showNav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 70px;
+        background-color: #212121;
+        opacity: 80%;
+        transition: background-color 1s;
+    }
+
     .about{
         display: flex;
         justify-content: center;
